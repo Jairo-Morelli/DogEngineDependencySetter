@@ -1,0 +1,13 @@
+# ninja log v6
+13	28	7630802571565360	clean	8c45b54705a541e8
+21	352	7630802572018297	GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj	2d6bec59b72ee644
+13	345	7630802571936166	CMakeTest01/CMakeFiles/CMakeTest01.dir/CMakeTest01.cpp.obj	fbeb71dd4aa6d0e5
+352	390	7630802575319780	GameObject/GameObject.lib	ac68288f75b664fb
+509	729	7630769371558701	CMakeTest01/CMakeTest01.exe	920f291b40887b30
+24	357	7630802572045220	Networking/CMakeFiles/Networking.dir/Networking.cpp.obj	70dba391af7eb19f
+346	390	7630802575263468	CMakeTest01/CMakeTest01.lib	38488fd0ce641a72
+358	395	7630802575378952	Networking/Networking.lib	24747476857a527
+20	332	7630803192438410	CMakeFiles/Main.dir/Main.cpp.obj	84da42bbf0072230
+18	844	7630802571976364	FileManager/CMakeFiles/FileManager.dir/FileManager.cpp.obj	386f11c921885e5f
+844	881	7630802580241968	FileManager/FileManager.lib	c685fd5b8aa9b2a7
+333	488	7630803195570986	Main.exe	6ac3bdf217dcb924
