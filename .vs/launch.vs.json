@@ -1,0 +1,19 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "Main.exe",
+      "name": "Main.exe"
+    },
+    {
+      "type": "dll",
+      "exe": "",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SDL2.dll (SDL2\\SDL2.dll)",
+      "name": "SDL2.dll (SDL2\\SDL2.dll)"
+    }
+  ]
+}

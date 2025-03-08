@@ -38,6 +38,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/FileManager/cmake_install.cmake")
   include("C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/GameObject/cmake_install.cmake")
   include("C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/Networking/cmake_install.cmake")
+  include("C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/SDL2/cmake_install.cmake")
 
 endif()
 

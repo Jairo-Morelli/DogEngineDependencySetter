@@ -122,7 +122,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CMakeTest01
+CMAKE_PROJECT_NAME:STATIC=SDLProject
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.exe
@@ -203,6 +203,39 @@ CMakeTest01_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 CMakeTest01_SOURCE_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01
+
+//Value Computed by CMake
+CMakeTest0_BINARY_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug
+
+//Value Computed by CMake
+CMakeTest0_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+CMakeTest0_SOURCE_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01
+
+//Dependencies for the target
+Main_LIB_DEPENDS:STATIC=general;CMakeTest01;general;FileManager;general;GameObject;general;Networking;general;SDL2;
+
+//Value Computed by CMake
+SDL-T_BINARY_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug
+
+//Value Computed by CMake
+SDL-T_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SDL-T_SOURCE_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01
+
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
+
+//Value Computed by CMake
+SDLProject_BINARY_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug
+
+//Value Computed by CMake
+SDLProject_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SDLProject_SOURCE_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01
 
 
 ########################
@@ -295,7 +328,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

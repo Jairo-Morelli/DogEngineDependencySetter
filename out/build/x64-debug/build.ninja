@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: CMakeTest01
+# Project: SDLProject
 # Configurations: Debug
 # =============================================================================
 
@@ -50,8 +50,8 @@ cmake_ninja_workdir = C$:\Users\Jairo\source\repos\CMakeTest01\out\build\x64-deb
 build cmake_object_order_depends_target_Main: phony || cmake_object_order_depends_target_CMakeTest01 cmake_object_order_depends_target_FileManager cmake_object_order_depends_target_GameObject cmake_object_order_depends_target_Networking
 
 build CMakeFiles\Main.dir\Main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C$:\Users\Jairo\source\repos\CMakeTest01\Main.cpp || cmake_object_order_depends_target_Main
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -IC:\Users\Jairo\source\repos\CMakeTest01\CMakeTest01 -IC:\Users\Jairo\source\repos\CMakeTest01\FileManager -IC:\Users\Jairo\source\repos\CMakeTest01\GameObject -IC:\Users\Jairo\source\repos\CMakeTest01\Networking
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\Jairo\source\repos\CMakeTest01\CMakeTest01 -IC:\Users\Jairo\source\repos\CMakeTest01\FileManager -IC:\Users\Jairo\source\repos\CMakeTest01\GameObject -IC:\Users\Jairo\source\repos\CMakeTest01\Networking -IC:\Users\Jairo\source\repos\CMakeTest01\SDL2
   OBJECT_DIR = CMakeFiles\Main.dir
   OBJECT_FILE_DIR = CMakeFiles\Main.dir
   TARGET_COMPILE_PDB = CMakeFiles\Main.dir\
@@ -65,10 +65,10 @@ build CMakeFiles\Main.dir\Main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C$:\U
 #############################################
 # Link the executable Main.exe
 
-build Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles\Main.dir\Main.cpp.obj | CMakeTest01\CMakeTest01.lib FileManager\FileManager.lib GameObject\GameObject.lib Networking\Networking.lib || CMakeTest01\CMakeTest01.lib FileManager\FileManager.lib GameObject\GameObject.lib Networking\Networking.lib
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+build Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles\Main.dir\Main.cpp.obj | CMakeTest01\CMakeTest01.lib FileManager\FileManager.lib GameObject\GameObject.lib Networking\Networking.lib C$:\Users\Jairo\source\repos\CMakeTest01\SDL2\SDL2.lib C$:\Users\Jairo\source\repos\CMakeTest01\SDL2\SDL2main.lib || CMakeTest01\CMakeTest01.lib FileManager\FileManager.lib GameObject\GameObject.lib Networking\Networking.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = CMakeTest01\CMakeTest01.lib  FileManager\FileManager.lib  GameObject\GameObject.lib  Networking\Networking.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = CMakeTest01\CMakeTest01.lib  FileManager\FileManager.lib  GameObject\GameObject.lib  Networking\Networking.lib  C:\Users\Jairo\source\repos\CMakeTest01\SDL2\SDL2.lib  C:\Users\Jairo\source\repos\CMakeTest01\SDL2\SDL2main.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\Main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -115,7 +115,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 build cmake_object_order_depends_target_CMakeTest01: phony || .
 
 build CMakeTest01\CMakeFiles\CMakeTest01.dir\CMakeTest01.cpp.obj: CXX_COMPILER__CMakeTest01_unscanned_Debug C$:\Users\Jairo\source\repos\CMakeTest01\CMakeTest01\CMakeTest01.cpp || cmake_object_order_depends_target_CMakeTest01
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -Zi
   OBJECT_DIR = CMakeTest01\CMakeFiles\CMakeTest01.dir
   OBJECT_FILE_DIR = CMakeTest01\CMakeFiles\CMakeTest01.dir
   TARGET_COMPILE_PDB = CMakeTest01\CMakeFiles\CMakeTest01.dir\CMakeTest01.pdb
@@ -130,7 +130,7 @@ build CMakeTest01\CMakeFiles\CMakeTest01.dir\CMakeTest01.cpp.obj: CXX_COMPILER__
 # Link the static library CMakeTest01\CMakeTest01.lib
 
 build CMakeTest01\CMakeTest01.lib: CXX_STATIC_LIBRARY_LINKER__CMakeTest01_Debug CMakeTest01\CMakeFiles\CMakeTest01.dir\CMakeTest01.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = CMakeTest01\CMakeFiles\CMakeTest01.dir
   POST_BUILD = cd .
@@ -177,7 +177,7 @@ build CMakeTest01\rebuild_cache: phony CMakeTest01\CMakeFiles\rebuild_cache.util
 build cmake_object_order_depends_target_FileManager: phony || .
 
 build FileManager\CMakeFiles\FileManager.dir\FileManager.cpp.obj: CXX_COMPILER__FileManager_unscanned_Debug C$:\Users\Jairo\source\repos\CMakeTest01\FileManager\FileManager.cpp || cmake_object_order_depends_target_FileManager
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -Zi
   OBJECT_DIR = FileManager\CMakeFiles\FileManager.dir
   OBJECT_FILE_DIR = FileManager\CMakeFiles\FileManager.dir
   TARGET_COMPILE_PDB = FileManager\CMakeFiles\FileManager.dir\FileManager.pdb
@@ -192,7 +192,7 @@ build FileManager\CMakeFiles\FileManager.dir\FileManager.cpp.obj: CXX_COMPILER__
 # Link the static library FileManager\FileManager.lib
 
 build FileManager\FileManager.lib: CXX_STATIC_LIBRARY_LINKER__FileManager_Debug FileManager\CMakeFiles\FileManager.dir\FileManager.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = FileManager\CMakeFiles\FileManager.dir
   POST_BUILD = cd .
@@ -239,7 +239,7 @@ build FileManager\rebuild_cache: phony FileManager\CMakeFiles\rebuild_cache.util
 build cmake_object_order_depends_target_GameObject: phony || .
 
 build GameObject\CMakeFiles\GameObject.dir\GameObject.cpp.obj: CXX_COMPILER__GameObject_unscanned_Debug C$:\Users\Jairo\source\repos\CMakeTest01\GameObject\GameObject.cpp || cmake_object_order_depends_target_GameObject
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
   OBJECT_DIR = GameObject\CMakeFiles\GameObject.dir
   OBJECT_FILE_DIR = GameObject\CMakeFiles\GameObject.dir
   TARGET_COMPILE_PDB = GameObject\CMakeFiles\GameObject.dir\GameObject.pdb
@@ -254,7 +254,7 @@ build GameObject\CMakeFiles\GameObject.dir\GameObject.cpp.obj: CXX_COMPILER__Gam
 # Link the static library GameObject\GameObject.lib
 
 build GameObject\GameObject.lib: CXX_STATIC_LIBRARY_LINKER__GameObject_Debug GameObject\CMakeFiles\GameObject.dir\GameObject.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = GameObject\CMakeFiles\GameObject.dir
   POST_BUILD = cd .
@@ -301,7 +301,7 @@ build GameObject\rebuild_cache: phony GameObject\CMakeFiles\rebuild_cache.util
 build cmake_object_order_depends_target_Networking: phony || .
 
 build Networking\CMakeFiles\Networking.dir\Networking.cpp.obj: CXX_COMPILER__Networking_unscanned_Debug C$:\Users\Jairo\source\repos\CMakeTest01\Networking\Networking.cpp || cmake_object_order_depends_target_Networking
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
   OBJECT_DIR = Networking\CMakeFiles\Networking.dir
   OBJECT_FILE_DIR = Networking\CMakeFiles\Networking.dir
   TARGET_COMPILE_PDB = Networking\CMakeFiles\Networking.dir\Networking.pdb
@@ -316,7 +316,7 @@ build Networking\CMakeFiles\Networking.dir\Networking.cpp.obj: CXX_COMPILER__Net
 # Link the static library Networking\Networking.lib
 
 build Networking\Networking.lib: CXX_STATIC_LIBRARY_LINKER__Networking_Debug Networking\CMakeFiles\Networking.dir\Networking.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = Networking\CMakeFiles\Networking.dir
   POST_BUILD = cd .
@@ -349,6 +349,64 @@ build Networking\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 build Networking\rebuild_cache: phony Networking\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Jairo/source/repos/CMakeTest01/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target SDL2
+
+
+#############################################
+# Order-only phony target for SDL2
+
+build cmake_object_order_depends_target_SDL2: phony || .
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target SDL2
+
+
+#############################################
+# Link the shared library SDL2\SDL2.dll
+
+build SDL2\SDL2.dll SDL2\SDL2.lib: CXX_SHARED_LIBRARY_LINKER__SDL2_Debug
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = SDL2\CMakeFiles\SDL2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = SDL2\CMakeFiles\SDL2.dir\
+  TARGET_FILE = SDL2\SDL2.dll
+  TARGET_IMPLIB = SDL2\SDL2.lib
+  TARGET_PDB = SDL2\SDL2.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build SDL2\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Jairo\source\repos\CMakeTest01\out\build\x64-debug\SDL2 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build SDL2\edit_cache: phony SDL2\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build SDL2\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Jairo\source\repos\CMakeTest01\out\build\x64-debug\SDL2 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Jairo\source\repos\CMakeTest01 -BC:\Users\Jairo\source\repos\CMakeTest01\out\build\x64-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build SDL2\rebuild_cache: phony SDL2\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build CMakeTest01: phony CMakeTest01\CMakeTest01.lib
@@ -369,6 +427,10 @@ build Networking: phony Networking\Networking.lib
 
 build Networking.lib: phony Networking\Networking.lib
 
+build SDL2: phony SDL2\SDL2.dll
+
+build SDL2.dll: phony SDL2\SDL2.dll
+
 # =============================================================================
 # Folder targets.
 
@@ -377,7 +439,7 @@ build Networking.lib: phony Networking\Networking.lib
 #############################################
 # Folder: C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug
 
-build all: phony Main.exe CMakeTest01\all FileManager\all GameObject\all Networking\all
+build all: phony Main.exe CMakeTest01\all FileManager\all GameObject\all Networking\all SDL2\all
 
 # =============================================================================
 
@@ -408,20 +470,27 @@ build GameObject\all: phony GameObject\GameObject.lib
 build Networking\all: phony Networking\Networking.lib
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/SDL2
+
+build SDL2\all: phony SDL2\SDL2.dll
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\Jairo\source\repos\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\FileManager\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\GameObject\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\Networking\CMakeLists.txt CMakeCache.txt CMakeFiles\3.30.5-msvc23\CMakeCCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\Jairo\source\repos\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\FileManager\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\GameObject\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\Networking\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\SDL2\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\sdl2-config.cmake CMakeCache.txt CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\Jairo\source\repos\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\FileManager\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\GameObject\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\Networking\CMakeLists.txt CMakeCache.txt CMakeFiles\3.30.5-msvc23\CMakeCCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\Jairo\source\repos\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\CMakeTest01\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\FileManager\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\GameObject\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\Networking\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\SDL2\CMakeLists.txt C$:\Users\Jairo\source\repos\CMakeTest01\sdl2-config.cmake CMakeCache.txt CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake: phony
 
 
 #############################################

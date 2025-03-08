@@ -13,3 +13,6 @@ C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/GameObject/CMakeFile
 C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/Networking/CMakeFiles/Networking.dir
 C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/Networking/CMakeFiles/edit_cache.dir
 C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/Networking/CMakeFiles/rebuild_cache.dir
+C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/SDL2/CMakeFiles/SDL2.dir
+C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/SDL2/CMakeFiles/edit_cache.dir
+C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug/SDL2/CMakeFiles/rebuild_cache.dir
