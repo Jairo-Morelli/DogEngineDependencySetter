@@ -22,6 +22,7 @@ project(SDLProject CXX)
 
 
 
+
 # Include sub-projects.
 # here you know how to add folders 
 add_subdirectory ("CMakeTest01")
@@ -30,24 +31,35 @@ add_subdirectory("GameObject")
 add_subdirectory("Networking")
 add_subdirectory("SDL2")
 
-#set_property(TARGET SDLProject PROPERTY CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
 
 
 add_executable (Main "Main.cpp")
 
 
-set(SDL2_DIR "C:/Users/Jairo/source/repos/CMakeTest01")
+set(SDL2_DIR "${PROJECT_SOURCE_DIR}/SDL2/")
+
+
+#configure file 
+configure_file("${PROJECT_SOURCE_DIR}/SDL2/SDL_config.h.in" "${PROJECT_BINARY_DIR}/SDL2/sdl_config.h")
+
+
 
 
 #SDL2 Stuff
-find_package(SDL2 REQUIRED CONFIG)
-include_directories(${SDL_INCLUDE_DIRS})
+find_package(SDL2 REQUIRED CONFIG PATHS "${SDL2_DIR}")
+
 
 
 
 
 #Now it is time for you to link your libraries
 
-target_link_libraries(Main CMakeTest01 FileManager GameObject Networking ${SDL2_LIBRARIES})
 
-target_include_directories(Main PUBLIC CMakeTest01 FileManager GameObject Networking SDL2)
+
+target_include_directories(Main PUBLIC CMakeTest01 FileManager GameObject Networking "${SDL2_INCLUDE_DIRS}")
+
+target_link_libraries(Main CMakeTest01 FileManager GameObject Networking "${SDL2_LIBRARIES}" )
+
+
+
+

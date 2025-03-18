@@ -228,6 +228,12 @@ SDL-T_SOURCE_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
 
+//Dependencies for the target
+SDL2_LIB_DEPENDS:STATIC=general;SDL2.dll;general;SDL2.lib;
+
+//Path to a library.
+SDLMAIN_LIBRARY:FILEPATH=SDLMAIN_LIBRARY-NOTFOUND
+
 //Value Computed by CMake
 SDLProject_BINARY_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01/out/build/x64-debug
 
@@ -236,6 +242,12 @@ SDLProject_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 SDLProject_SOURCE_DIR:STATIC=C:/Users/Jairo/source/repos/CMakeTest01
+
+//The directory containing a CMake configuration file for SDL.
+SDL_DIR:PATH=SDL_DIR-NOTFOUND
+
+//Path to a file.
+SDL_INCLUDE_DIR:PATH=SDL_INCLUDE_DIR-NOTFOUND
 
 
 ########################
@@ -310,6 +322,12 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Jairo/source/repos/CMakeTest01
@@ -374,4 +392,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Path to a library.
+SDL_LIBRARY_TEMP:INTERNAL=SDL_LIBRARY_TEMP-NOTFOUND
 

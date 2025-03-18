@@ -1,15 +1,14 @@
 # ninja log v6
-17	33	7631642419846372	clean	8c45b54705a541e8
-25	99	7631642420352723	GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj	911c5aaed08caed7
-16	79	7631642420276002	CMakeTest01/CMakeFiles/CMakeTest01.dir/CMakeTest01.cpp.obj	f0cd3f293a1839ea
-99	144	7631642421104558	GameObject/GameObject.lib	ac68288f75b664fb
+22	38	7639640916475642	clean	8c45b54705a541e8
+23	68	7639640916951068	GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj	911c5aaed08caed7
+68	105	7639640917404466	GameObject/GameObject.lib	ac68288f75b664fb
+15	54	7639640916879356	CMakeTest01/CMakeFiles/CMakeTest01.dir/CMakeTest01.cpp.obj	f0cd3f293a1839ea
 509	729	7630769371558701	CMakeTest01/CMakeTest01.exe	920f291b40887b30
-5	157	7631644503712218	build.ninja	1c1411958072ced5
-28	110	7631642420393751	Networking/CMakeFiles/Networking.dir/Networking.cpp.obj	3670c4b8bfa01e7f
-79	128	7631642420906484	CMakeTest01/CMakeTest01.lib	38488fd0ce641a72
-110	158	7631642421212495	Networking/Networking.lib	24747476857a527
-32	403	7631642420430575	CMakeFiles/Main.dir/Main.cpp.obj	1133633acd4ed403
-22	540	7631642420325985	FileManager/CMakeFiles/FileManager.dir/FileManager.cpp.obj	1d26e45be01fb64
-22	61	7631642517216516	FileManager/FileManager.lib	c685fd5b8aa9b2a7
-61	216	7631642517613349	Main.exe	a7b5141de497ce7e
-35	84	7631480509089903	SDL2/SDL2.lib	d181dc71bf4d3541
+29	189	7639642318244377	build.ninja	1c1411958072ced5
+26	74	7639640916984969	Networking/CMakeFiles/Networking.dir/Networking.cpp.obj	3670c4b8bfa01e7f
+54	94	7639640917261303	CMakeTest01/CMakeTest01.lib	38488fd0ce641a72
+74	110	7639640917469646	Networking/Networking.lib	24747476857a527
+29	372	7639640917011166	CMakeFiles/Main.dir/Main.cpp.obj	1133633acd4ed403
+20	514	7639640916919419	FileManager/CMakeFiles/FileManager.dir/FileManager.cpp.obj	1d26e45be01fb64
+514	549	7639640921868308	FileManager/FileManager.lib	c685fd5b8aa9b2a7
+549	678	7639640922215544	Main.exe	a7b5141de497ce7e

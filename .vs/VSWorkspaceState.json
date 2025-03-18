@@ -30,11 +30,9 @@
     "\\CMakeTest01",
     "\\FileManager",
     "\\GameObject",
-    "\\Local settings (.vs)",
     "\\Networking",
-    "\\out\\build\\x64-debug",
-    "\\out\\build\\x64-debug\\.cmake\\api",
-    "\\out\\build\\x64-debug\\.cmake\\api\\v1"
+    "\\out",
+    "\\SDL2"
   ],
   "PreviewInSolutionExplorer": false
 }

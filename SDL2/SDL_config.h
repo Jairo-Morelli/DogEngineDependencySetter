@@ -1,3 +1,4 @@
+#pragma once
 /*
   Simple DirectMedia Layer
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>

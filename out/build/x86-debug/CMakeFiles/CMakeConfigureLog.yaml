@@ -1,0 +1,153 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:20 (project)"
+    message: |
+      The target system is: LINUX -  - 
+      The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:20 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x86/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x86
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.43.34808.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Jairo/source/repos/CMakeTest01/out/build/x86-debug/CMakeFiles/3.30.5-msvc23/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1243 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:20 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\Jairo\\source\\repos\\CMakeTest01\\out\\build\\x86-debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:20 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Jairo/source/repos/CMakeTest01/out/build/x86-debug/CMakeFiles/CMakeScratch/TryCompile-eg54yy"
+      binary: "C:/Users/Jairo/source/repos/CMakeTest01/out/build/x86-debug/CMakeFiles/CMakeScratch/TryCompile-eg54yy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Jairo/source/repos/CMakeTest01/out/build/x86-debug/CMakeFiles/CMakeScratch/TryCompile-eg54yy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d53ed
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x86\\cl.exe    -o CMakeFiles\\cmTC_d53ed.dir\\CMakeCXXCompilerABI.cpp.o -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x86\x0d
+        Copyright (C) Microsoft Corporation.  All rights reserved.\x0d
+        \x0d
+        cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release\x0d
+        CMakeCXXCompilerABI.cpp\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x86\\cl.exe   CMakeFiles\\cmTC_d53ed.dir\\CMakeCXXCompilerABI.cpp.o -o cmTC_d53ed   && cd ."
+        FAILED: cmTC_d53ed 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x86\\cl.exe   CMakeFiles\\cmTC_d53ed.dir\\CMakeCXXCompilerABI.cpp.o -o cmTC_d53ed   && cd ."
+        Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x86
+        Copyright (C) Microsoft Corporation.  All rights reserved.
+        
+        cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+        cl : Command line warning D9024 : unrecognized source file type 'CMakeFiles\\cmTC_d53ed.dir\\CMakeCXXCompilerABI.cpp.o', object file assumed\x0d
+        Microsoft (R) Incremental Linker Version 14.43.34808.0\x0d
+        Copyright (C) Microsoft Corporation.  All rights reserved.\x0d
+        \x0d
+        /out:CMakeCXXCompilerABI.cpp.exe \x0d
+        /out:cmTC_d53ed.exe \x0d
+        CMakeFiles\\cmTC_d53ed.dir\\CMakeCXXCompilerABI.cpp.o \x0d
+        LINK : fatal error LNK1181: cannot open input file 'CMakeFiles\\cmTC_d53ed.dir\\CMakeCXXCompilerABI.cpp.o'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:20 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x86/cl.exe"
+    directories:
+      source: "C:/Users/Jairo/source/repos/CMakeTest01/out/build/x86-debug/CMakeFiles/CMakeScratch/TryCompile-mjwlna"
+      binary: "C:/Users/Jairo/source/repos/CMakeTest01/out/build/x86-debug/CMakeFiles/CMakeScratch/TryCompile-mjwlna"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Jairo/source/repos/CMakeTest01/out/build/x86-debug/CMakeFiles/CMakeScratch/TryCompile-mjwlna'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_3851a
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x86\\cl.exe    -o CMakeFiles\\cmTC_3851a.dir\\testCXXCompiler.cxx.o -c C:\\Users\\Jairo\\source\\repos\\CMakeTest01\\out\\build\\x86-debug\\CMakeFiles\\CMakeScratch\\TryCompile-mjwlna\\testCXXCompiler.cxx
+        Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x86\x0d
+        Copyright (C) Microsoft Corporation.  All rights reserved.\x0d
+        \x0d
+        cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release\x0d
+        testCXXCompiler.cxx\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x86\\cl.exe   CMakeFiles\\cmTC_3851a.dir\\testCXXCompiler.cxx.o -o cmTC_3851a   && cd ."
+        FAILED: cmTC_3851a 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x86\\cl.exe   CMakeFiles\\cmTC_3851a.dir\\testCXXCompiler.cxx.o -o cmTC_3851a   && cd ."
+        Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x86
+        Copyright (C) Microsoft Corporation.  All rights reserved.
+        
+        cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+        cl : Command line warning D9024 : unrecognized source file type 'CMakeFiles\\cmTC_3851a.dir\\testCXXCompiler.cxx.o', object file assumed\x0d
+        Microsoft (R) Incremental Linker Version 14.43.34808.0\x0d
+        Copyright (C) Microsoft Corporation.  All rights reserved.\x0d
+        \x0d
+        /out:testCXXCompiler.cxx.exe \x0d
+        /out:cmTC_3851a.exe \x0d
+        CMakeFiles\\cmTC_3851a.dir\\testCXXCompiler.cxx.o \x0d
+        LINK : fatal error LNK1181: cannot open input file 'CMakeFiles\\cmTC_3851a.dir\\testCXXCompiler.cxx.o'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
