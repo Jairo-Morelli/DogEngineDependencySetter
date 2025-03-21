@@ -15,7 +15,7 @@ endif()
 
 
 
-
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
 
 project(SDLProject CXX)
 
@@ -36,7 +36,7 @@ add_subdirectory("SDL2")
 add_executable (Main "Main.cpp")
 
 
-set(SDL2_DIR "C:/Users/Jairo/source/repos/CMakeTest01")
+set(SDL2_DIR "C:/Users/jalbm/source/repos/CMakeTest01")
 
 
 #SDL2 Stuff
