@@ -1,0 +1,3 @@
+#Ignoring the build directory because everyone's build directory is different 
+*./out 
+

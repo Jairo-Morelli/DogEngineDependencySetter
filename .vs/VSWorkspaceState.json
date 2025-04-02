@@ -1,5 +1,4 @@
 {
-  "DevContainersInfoBarHidden": true,
   "OutputFoldersPerTargetSystem": {
     "Local Machine": [
       "out\\build\\x64-debug",
@@ -10,27 +9,13 @@
       "out\\install\\x86-debug",
       "out\\build\\x86-release",
       "out\\install\\x86-release"
-    ],
-    "WSL: Ubuntu": [
-      "out\\Ubuntu\\build\\linux-debug",
-      "out\\Ubuntu\\install\\linux-debug"
     ]
-  },
-  "ActiveTargetSystem": "Local Machine",
-  "MRUPresetsPerTargetSystem": {
-    "Local Machine": {
-      "configure": "x64-debug"
-    },
-    "WSL: Ubuntu": {
-      "configure": "linux-debug"
-    }
   },
   "ExpandedNodes": [
     "",
-    "\\CMakeTest01",
-    "\\FileManager",
-    "\\GameObject",
-    "\\Networking"
+    "\\Networking",
+    "\\out"
   ],
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
